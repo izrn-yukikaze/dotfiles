@@ -1,0 +1,1 @@
+/usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
