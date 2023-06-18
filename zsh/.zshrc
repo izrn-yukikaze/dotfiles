@@ -42,7 +42,7 @@ setopt share_history
 
 autoload -Uz compinit promptinit && compinit
 ## For Gentoo Linux.
-## If you use another Linux or Unix OS, this line is should be comment-outed.
+## If you use another Linux or Unix OS, this line should be comment-outed.
 promptinit prompt gentoo
 zstyle ':completion:*' menu select
 setopt menu_complete
