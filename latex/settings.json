@@ -6,7 +6,8 @@
             "args": [
                 "-gg",
                 "-pdflua",
-                "-outdir=%OUTDIR%",
+                "-auxdir=midfiles",
+                "-outdir=out",
                 "%DOC%"
             ],
             "env": {}
@@ -20,7 +21,6 @@
             ]
         },
     ],
-    "latex-workshop.latex.outDir": "%DIR%/pdf",
     "latex-workshop.latex.autoBuild.run": "onSave",
     "latex-workshop.view.pdf.viewer": "tab",
     "editor.wordWrap": "on",
