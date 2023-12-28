@@ -49,7 +49,11 @@ setopt menu_complete
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion::complete:*' use-cache 1
 ## Generally, you shoud make symlink to zsh-syntax-highlighting.
-source $HOME/.config/dotfiles/zsh/zsh-syntax-highlighting/zsh-syntax-highlighing.zsh
-source $HOME/.config/dotfiles/zsh/zsh-autosuggestions/zsh-autpsuggestions.zsh
+source $HOME/.config/dotfiles/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source $HOME/.config/dotfiles/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 PROMPT='%F{green}%n%f@%F{magenta}%m%f %F{blue}%B%~%b%f %# '
 
+export STARSHIP_CONFIG="$HOME/.config/dotfiles/starship/starship.toml"
+
+
+eval "$(starship init zsh)"
