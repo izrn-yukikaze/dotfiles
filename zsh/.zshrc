@@ -24,8 +24,8 @@
 # .zshrc for Gentoo Linux by izurina #
 ######################################
 
-HISTFILE=$HOME/.zsh-history
-# HISTSIZE=10000
+HISTFILE=$HOME/.zsh_history
+HISTSIZE=10000
 SAVEHIST=10000
 setopt correct
 setopt hist_ignore_space
@@ -43,16 +43,13 @@ setopt share_history
 autoload -Uz compinit promptinit && compinit
 ## For Gentoo Linux.
 ## If you use another Linux or Unix OS, this line should be comment-outed.
-promptinit prompt gentoo
+# promptinit prompt gentoo
 zstyle ':completion:*' menu select
 setopt menu_complete
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion::complete:*' use-cache 1
 ## Generally, you shoud make symlink to zsh-syntax-highlighting.
-source $HOME/.config/zsh/zsh-syntax-highlighting.zsh
-source $HOME/.config/zsh/zsh-autosuggestions.zsh
+source $HOME/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighing.zsh
+source $HOME/.config/zsh/zsh-autosuggestions/zsh-autpsuggestions.zsh
 PROMPT='%F{green}%n%f@%F{magenta}%m%f %F{blue}%B%~%b%f %# '
 
-
-# Exports
-export LANG=C
